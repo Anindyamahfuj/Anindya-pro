@@ -16,6 +16,11 @@ box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
 
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 /* HEADER */
 
@@ -40,7 +45,21 @@ color:black;
 -webkit-text-fill-color:transparent;
 }
     
+img{
+  max-width: 100%;
+  height: auto;
+}
+    /* Desktop */
+.container{
+  display: flex;
+}
 
+/* Mobile */
+@media (max-width: 768px){
+  .container{
+    flex-direction: column;
+  }
+}
 nav ul{
 display:flex;
 list-style:none;
